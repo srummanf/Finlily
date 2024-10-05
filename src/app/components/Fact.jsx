@@ -40,16 +40,16 @@ const Fact = () => {
         </div>
         <div>
           <div className="bg-black text-white p-5 rounded-lg">
-            <h3 className="text-lg mb-2">LONG TERM STOCK RETURNS</h3>
+            <h3 className="text-lg mb-2">SHORT TERM STOCK RETURNS</h3>
             <p className="text-4xl font-bold">
-              661%<span className="text-green-500">*</span>
+              227%<span className="text-green-500">*</span>
             </p>
-            <p className="text-sm">Duration 250 - 270 Days</p>
+            <p className="text-sm">Duration 10 - 40 Days</p>
           </div>
           <div className="flex flex-col items-center mt-5">
             <p className="text-sm">EFFICIENCY OF STOCK CALLS</p>
             <p className="text-lg font-bold text-green-500 bg-green-100 px-4 py-1 rounded-full">
-              (88.88%)
+              (86.66%)
             </p>
           </div>
         </div>
@@ -83,7 +83,7 @@ const Fact = () => {
       <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
         <a
           href="#"
-          class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+          class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5"
         >
           <svg
             class="me-3 w-7 h-7"
@@ -101,15 +101,15 @@ const Fact = () => {
             ></path>
           </svg>
           <div class="text-left rtl:text-right">
-            <div class="mb-1 text-xs">Download on the</div>
+            <div class="mb-1 text-xs">Soon to be released on Mac</div>
             <div class="-mt-1 font-sans text-sm font-semibold">
-              Mac App Store
+              Visit our website
             </div>
           </div>
         </a>
         <a
           href="#"
-          class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
+          class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5"
         >
           <svg
             class="me-3 w-7 h-7"

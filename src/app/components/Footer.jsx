@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Logo from "../public/images/logo.png";
 
 const Footer = () => {
   return (
@@ -13,14 +14,14 @@ const Footer = () => {
           >
             {/* Use next/image for optimized image loading */}
             <Image
-              src="https://flowbite.com/docs/images/logo.svg"
-              alt="Flowbite Logo"
+              src={Logo}
+              alt="Finlily Logo"
               height={32}
               width={32}
               className="h-8 w-8 object-contain"
             />
             <span className="self-center text-2xl font-semibold text-black whitespace-nowrap">
-              Flowbite
+              Finlily
             </span>
           </a>
 
