@@ -1,13 +1,12 @@
-import Image from "next/image";
 import Navbar from "./components/Navbar"
 import Pricing from "./components/Pricing";
-import Tagline from "./components/Tagline";
 import Hero from "./components/Hero2";
 import Download from "./components/Download";
 import Fact from "./components/Fact";
-import Table from "./components/Table";
 import Banner from "./components/Banner";
 import AboutUs from "./components/AboutUs";
+import Team from "./components/Team";
+import Footer from "./components/Footer";
 
 
 export default function Home() {
@@ -17,11 +16,11 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <AboutUs/>
-      {/* <Tagline/> */}
       <Fact/>
       <Pricing/>
       <Download/>
-      <Table/>
+      <Team/>
+      <Footer/>
     </div>
   );
 }
