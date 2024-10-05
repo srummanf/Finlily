@@ -1,21 +1,39 @@
-"use client"
+"use client";
 
-import React, {useState} from 'react'
+import Image from "next/image";
+import React, { useState } from "react";
+import Logo from "../public/images/logo.png";
 
 const Banner = () => {
-    const [visible, setVisible] = useState(true);
-  return (
-    <section className="relative h-screen">
-      {/* Component */}
-      {visible && (
-        <div className="absolute top-0 mx-auto flex w-full items-center justify-center border-b-2 border-black bg-white py-4">
-          {/* Banner Text  */}
-          <p className="md:mx-auto text-center mr-2">
-            Ut enim odio quis ipsum posuere ante porta nibh nulla.
-          </p>
+  const [visible, setVisible] = useState(true);
 
-          {/* Close Button */}
-          <div>
+  return (
+    <section className="relative">
+      {/* Banner Component */}
+      {visible && (
+        <div className="fixed left-1/2 bottom-8 mx-auto flex w-[90%] max-w-5xl -translate-x-1/2 flex-col items-center rounded-lg border-2 border-black bg-white p-4 sm:justify-between sm:px-8 md:flex-row md:py-3 lg:w-full z-50">
+          {/* Banner Text */}
+          <div className="flex items-center">
+            <Image
+              src={Logo}
+              alt=""
+              className="mr-4 inline-block h-8 w-8 rounded-full object-cover"
+            />
+            <p className="text-black">
+              Earn With Every Call. Unlock the Secrets of Successful Financial
+              Planning
+            </p>
+          </div>
+
+          {/* Get Started Button */}
+          <div className="mt-4 flex relative flex-row items-center justify-center gap-10 md:mt-0">
+            <a
+              href="#"
+              className="inline-block rounded-lg bg-black px-5 py-2 font-semibold text-white"
+            >
+              Get Started
+            </a>
+            <div className="h-full w-[1px] bg-gray-300 absolute top-0 right-10"></div>
             <svg
               onClick={() => setVisible(false)}
               className="cursor-pointer"
@@ -42,8 +60,6 @@ const Banner = () => {
       )}
     </section>
   );
-}
+};
 
-export default Banner
-
-
+export default Banner;

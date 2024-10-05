@@ -16,7 +16,7 @@ const Hero2 = () => {
           <div>
             {/* Title */}
             <h1 className="mb-4 text-4xl text-black font-bold md:text-6xl">
-              Earn With Every Call
+              Discover <span className="text-teal-500">Finance</span> On Your Fingertips
             </h1>
             <p className="mb-6 max-w-lg text-sm text-black sm:text-xl lg:mb-8">
               Welcome to Your Gateway of Personal Finance.
