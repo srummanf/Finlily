@@ -1,8 +1,13 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../public/images/logo.png";
 
 const Fact = () => {
+  const [showMore1, setShowMore1] = useState(false);
+  const [showMore2, setShowMore2] = useState(false);
+
   return (
     <div className="font-sans max-w-full mx-auto p-5 bg-white text-black text-center">
       {/* Logo Section */}
@@ -13,7 +18,9 @@ const Fact = () => {
 
       {/* Title Section */}
       <h1 className="text-2xl mb-2">Don't Just Invest</h1>
-      <h2 className="text-6xl text-green-500 font-bold mb-5">Dominate!</h2>
+      <h2 className="text-6xl text-green-500 font-bold mb-5">
+        Earn with every call!
+      </h2>
 
       {/* Performance Details */}
       <p className="text-lg mb-1">Our SEBI RA Past Performance Speaks</p>
@@ -22,15 +29,59 @@ const Fact = () => {
       </p>
 
       {/* Card Container - Stock Returns */}
-      <div className="flex flex-col gap-5 mb-5 justify-center lg:flex-row">
-        <div>
+      <div className="flex flex-col gap-7 mb-5 justify-center md:flex-row">
+        <div className="p-5 max-w-lg ">
+          {/* Main Stock Return Section */}
           <div className="bg-black text-white p-5 rounded-lg">
             <h3 className="text-lg mb-2">LONG TERM STOCK RETURNS</h3>
             <p className="text-4xl font-bold">
               661%<span className="text-green-500">*</span>
             </p>
             <p className="text-sm">Duration 250 - 270 Days</p>
+
+            {/* Read More Button inside the Black Div */}
+            <button
+              className="mt-5 bg-[#3190C2] text-white px-4 py-2 rounded-md"
+              onClick={() => setShowMore1(!showMore1)}
+            >
+              {showMore1 ? "Read Less" : "Read More"}
+            </button>
+
+            {/* Collapsible Table Section */}
+            {showMore1 && (
+              <div className="mt-5 overflow-x-auto">
+                <table className="w-full table-auto border-collapse text-black bg-white ">
+                  <thead>
+                    <tr className="bg-gray-200">
+                      <th className="px-4 py-2 border">Stock Name</th>
+                      <th className="px-4 py-2 border">P&L %</th>
+                      <th className="px-4 py-2 border">Duration</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="px-4 py-2 border">Prestige Estates</td>
+                      <td className="px-4 py-2 border">198.42%</td>
+                      <td className="px-4 py-2 border">334 Days</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 border">Zomato</td>
+                      <td className="px-4 py-2 border">40%</td>
+                      <td className="px-4 py-2 border">121 Days</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 border">Lupin</td>
+                      <td className="px-4 py-2 border">96.98%</td>
+                      <td className="px-4 py-2 border">320 Days</td>
+                    </tr>
+                    {/* Add more rows as needed */}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </div>
+
+          {/* Efficiency Section */}
           <div className="flex flex-col items-center mt-5">
             <p className="text-sm">EFFICIENCY OF STOCK CALLS</p>
             <p className="text-lg font-bold text-green-500 bg-green-100 px-4 py-1 rounded-full">
@@ -38,14 +89,58 @@ const Fact = () => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="p-5 max-w-lg ">
+          {/* Main Stock Return Section */}
           <div className="bg-black text-white p-5 rounded-lg">
             <h3 className="text-lg mb-2">SHORT TERM STOCK RETURNS</h3>
             <p className="text-4xl font-bold">
               227%<span className="text-green-500">*</span>
             </p>
             <p className="text-sm">Duration 10 - 40 Days</p>
+
+            {/* Read More Button inside the Black Div */}
+            <button
+              className="mt-5 bg-[#3190C2] text-white px-4 py-2 rounded-md"
+              onClick={() => setShowMore2(!showMore2)}
+            >
+              {showMore2 ? "Read Less" : "Read More"}
+            </button>
+
+            {/* Collapsible Table Section */}
+            {showMore2 && (
+              <div className="mt-5 overflow-x-auto">
+                <table className="w-full table-auto border-collapse text-black bg-white">
+                  <thead>
+                    <tr className="bg-gray-200">
+                      <th className="px-4 py-2 border">Stock Name</th>
+                      <th className="px-4 py-2 border">P&L %</th>
+                      <th className="px-4 py-2 border">Duration</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="px-4 py-2 border">Anantraj</td>
+                      <td className="px-4 py-2 border">10%</td>
+                      <td className="px-4 py-2 border">27 Days</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 border">Vardhman Textiles</td>
+                      <td className="px-4 py-2 border">11%</td>
+                      <td className="px-4 py-2 border">22 Days</td>
+                    </tr>
+                    <tr>
+                      <td className="px-4 py-2 border">Iex</td>
+                      <td className="px-4 py-2 border">13%</td>
+                      <td className="px-4 py-2 border">31 Days</td>
+                    </tr>
+                    {/* Add more rows as needed */}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </div>
+
+          {/* Efficiency Section */}
           <div className="flex flex-col items-center mt-5">
             <p className="text-sm">EFFICIENCY OF STOCK CALLS</p>
             <p className="text-lg font-bold text-green-500 bg-green-100 px-4 py-1 rounded-full">
@@ -82,7 +177,7 @@ const Fact = () => {
       </div> */}
       <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
         <a
-          href="#"
+          href="https://finlilytechnology.com/"
           class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5"
         >
           <svg
@@ -101,14 +196,14 @@ const Fact = () => {
             ></path>
           </svg>
           <div class="text-left rtl:text-right">
-            <div class="mb-1 text-xs">Soon to be released on Mac</div>
+            <div class="mb-1 text-xs">Soon to be released on iOS</div>
             <div class="-mt-1 font-sans text-sm font-semibold">
               Visit our website
             </div>
           </div>
         </a>
         <a
-          href="#"
+          href="https://play.google.com/store/apps/details?id=finlilytechnology.com&hl=en_IN"
           class="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5"
         >
           <svg
@@ -135,8 +230,9 @@ const Fact = () => {
 
       {/* Notes Section */}
       <p className="text-xs text-gray-500 mt-5">
-        Note - Past Performance is not indicative of future results. Investments
-        are subject to market risk.
+        Note - Stock call efficiency represents how often our recommendations
+        hit the mark. For example, an efficiency of 88.88% means that nearly 9
+        out of 10 stock calls deliver positive returns.
       </p>
       <p className="text-xs text-gray-500">
         <span className="text-green-500">*</span>Cumulative returns from August
