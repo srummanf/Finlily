@@ -29,22 +29,34 @@ const Footer = () => {
           {/* Navigation Links */}
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0">
             <li>
-              <a href="#" className="hover:text-blue-500 me-4 md:me-6">
+              <a
+                href="https://finlilytechnology.com/about-me/"
+                className="hover:text-blue-500 me-4 md:me-6"
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500 me-4 md:me-6">
+              <a
+                href="https://finlilytechnology.com/privacy-policy-2/"
+                className="hover:text-blue-500 me-4 md:me-6"
+              >
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500 me-4 md:me-6">
-                Licensing
+              <a
+                href="https://finlilytechnology.com/terms-conditions/"
+                className="hover:text-blue-500 me-4 md:me-6"
+              >
+                Terms and Condition
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500">
+              <a
+                href="https://finlilytechnology.com/contact/"
+                className="hover:text-blue-500"
+              >
                 Contact
               </a>
             </li>
@@ -57,7 +69,10 @@ const Footer = () => {
         {/* Footer Text */}
         <span className="block text-sm text-gray-500 sm:text-center">
           © {currentYear}{" "}
-          <a href="https://flowbite.com/" className="hover:text-blue-500">
+          <a
+            href="https://finlilytechnology.com/"
+            className="hover:text-blue-500"
+          >
             Finlily
           </a>
           . All Rights Reserved.

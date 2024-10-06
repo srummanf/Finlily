@@ -13,6 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Favicon Meta Tag */}
+        <link rel="icon" href="https://finlilytechnology.com/wp-content/uploads/2023/12/finlilly-fav-100x100.png" sizes="32x32" /> 
+
         {/* Primary Meta Tags */}
         <meta name="title" content="Finlily | Practical Trading Education & Learning Platform" />
         <meta name="description" content="Earn With Every Call. Unlock the Secrets of Successful Financial Planning with Finlily. Gain practical trading insights, real-time analysis, and access to a community of experienced traders." />
