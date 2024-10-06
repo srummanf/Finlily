@@ -13,7 +13,7 @@ const Fact = () => {
 
       {/* Title Section */}
       <h1 className="text-2xl mb-2">Don't Just Invest</h1>
-      <h2 className="text-4xl text-green-500 font-bold mb-5">Dominate!</h2>
+      <h2 className="text-6xl text-green-500 font-bold mb-5">Dominate!</h2>
 
       {/* Performance Details */}
       <p className="text-lg mb-1">Our SEBI RA Past Performance Speaks</p>
@@ -139,7 +139,8 @@ const Fact = () => {
         are subject to market risk.
       </p>
       <p className="text-xs text-gray-500">
-        Cumulative returns from August 2023
+        <span className="text-green-500">*</span>Cumulative returns from August
+        2023
       </p>
     </div>
   );
