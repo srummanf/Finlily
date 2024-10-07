@@ -7,12 +7,12 @@ const Features = () => {
         <h1 className="text-3xl font-bold text-center mb-8 text-black">
           What Do You Get From Us
         </h1>
-        <table className="w-full">
+        <table className="w-full border border-gray-300 border-collapse">
           <caption className="sr-only">Pricing plan comparison</caption>
           <thead>
-            <tr>
-              <th></th>
-              <th scope="col">
+            <tr className="border-b border-gray-300">
+              <th className="border-r border-gray-300"></th>
+              <th scope="col" className="border-r border-gray-300">
                 <h2 className="px-2 text-lg font-medium text-black">
                   Free User
                 </h2>
@@ -21,12 +21,6 @@ const Features = () => {
                 <h2 className="px-2 text-lg font-medium text-black">
                   Pro User
                 </h2>
-                {/* <p className="mb-3">
-                  <span className="text-2xl font-bold sm:text-4xl text-black">
-                    19€
-                  </span>
-                  <span className="font-medium text-gray-500">/mo</span>
-                </p> */}
               </th>
             </tr>
           </thead>
@@ -53,11 +47,14 @@ const Features = () => {
               },
               { feature: "Dedicated Support", free: false, pro: true },
             ].map(({ feature, free, pro }, index) => (
-              <tr key={index}>
-                <th scope="row" className="text-left py-3 text-black">
+              <tr key={index} className="border-b border-gray-300">
+                <th
+                  scope="row"
+                  className="text-left py-3 px-4 text-black border-r border-gray-300"
+                >
                   <h3>{feature}</h3>
                 </th>
-                <td>
+                <td className="border-r border-gray-300">
                   {free ? (
                     <svg
                       className="w-5 h-5 mx-auto text-green-500"
@@ -121,5 +118,3 @@ const Features = () => {
 };
 
 export default Features;
-
-
