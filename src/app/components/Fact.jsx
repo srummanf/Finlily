@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../public/images/logo.png";
+import Logo from "../public/images/logo2.png";
 
 const Fact = () => {
   const [showMore1, setShowMore1] = useState(false);
@@ -12,8 +12,8 @@ const Fact = () => {
     <div className="font-sans max-w-full mx-auto p-5 bg-white text-black text-center">
       {/* Logo Section */}
       <div className="flex items-center justify-center mb-5">
-        <Image src={Logo} alt="Finlily Logo" width={40} height={40} />
-        <span className="text-2xl font-bold ml-2">FINLILY.</span>
+        <Image src={Logo} alt="Finlily Logo" width={150} height={40} />
+        {/* <span className="text-2xl font-bold ml-2">FINLILY.</span> */}
       </div>
 
       {/* Title Section */}

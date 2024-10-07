@@ -4,13 +4,19 @@ const Download = () => {
   return (
     <div className="w-full p-4 text-center bg-white border border-gray-200 shadow sm:p-8">
       <h5 className="mb-2 text-3xl font-bold text-gray-900 ">
-        Trade Anywhere, Anytime
+        Discover Finance On Your Fingertips
       </h5>
-      <p className="mb-5 text-base text-gray-500 sm:text-lg ">
-        Stay connected and keep up with the latest market trends using Finlily
-        on iOS & Android. Download the app now to access live trades, insights,
-        and educational resources on the go. 
-      </p>
+      <div className="mb-5">
+        <p className="text-base text-gray-500 sm:text-lg ">
+          Stay connected and keep up with the latest market trends using Finlily
+          on iOS & Android. Download the app now to access Insights and Stock
+          Advisory on the go.
+        </p>
+        <p className="mt-2 text-xs text-gray-700">
+          <span className="text-green-500">*</span>Terms and Conditions applied.
+        </p>
+      </div>
+
       <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
         <a
           href="https://finlilytechnology.com/"
@@ -59,7 +65,9 @@ const Download = () => {
           </svg>
           <div className="text-left rtl:text-right">
             <div className="mb-1 text-xs">Get in on</div>
-            <div className="-mt-1 font-sans text-sm font-semibold">Google Play</div>
+            <div className="-mt-1 font-sans text-sm font-semibold">
+              Google Play
+            </div>
           </div>
         </a>
       </div>
