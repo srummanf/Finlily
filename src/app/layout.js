@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Finlily | Practical Trading Education & Learning Platform",
+  title: "Finlily | SEBI RA Stock Advisory Platform",
   description: "Earn With Every Call. Unlock the Secrets of Successful Financial Planning with Finlily. Gain practical trading insights, real-time analysis, and access to a community of experienced traders.",
 };
 
