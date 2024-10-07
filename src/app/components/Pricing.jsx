@@ -6,260 +6,91 @@ import Image from "next/image";
 
 const Pricing = () => {
   return (
-    <section className="py-6 bg-white  text-black">
+    <section className="py-6 bg-white text-black">
       <div className="container mx-auto p-4 sm:p-10">
         <div className="mb-16 space-y-4 text-center">
-          <h1 className="text-4xl font-semibold leadi">Pricing</h1>
+          <h1 className="text-4xl font-semibold">Pricing</h1>
           <p className="px-4 sm:px-8 lg:px-24">
             Choose the plan that suits your trading goals. Unlock premium
             features and gain access to exclusive trading insights and
             strategies.
           </p>
         </div>
-        <div className="grid max-w-md grid-cols-1 gap-6 mx-auto auto-rows-fr lg:max-w-full lg:gap-2 xl:gap-6 lg:grid-cols-3">
-          <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow  ">
+        <div className="grid max-w-md grid-cols-1 gap-6 mx-auto lg:max-w-full lg:gap-6 xl:gap-10 lg:grid-cols-3">
+          {/* Half Yearly Plan */}
+          <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition-shadow duration-200">
             <a href="https://finlilytechnology.com/stock-calls/">
               <Image
                 className="p-8 rounded-t-lg"
                 src={HalfYearly}
-                alt="product image"
+                alt="Half Yearly Plan"
               />
             </a>
-            <div className="px-5 pb-5">
+            <div className="px-5 pb-5 text-center">
               <a href="https://finlilytechnology.com/stock-calls/">
-                <h5 className="text-xl font-semibold tracking-tight text-gray-900 ">
+                <h5 className="text-xl font-semibold tracking-tight text-gray-900 mb-2">
                   Stock Calls - Half Yearly Plan
                 </h5>
               </a>
-              <div className="flex items-center mt-2.5 mb-5">
-                <div className="flex items-center space-x-1 rtl:space-x-reverse">
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-gray-200 "
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                </div>
-                <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded  ms-3">
-                  5.0
-                </span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-xl font-bold text-gray-500  line-through">
+              <div className="flex flex-col items-center justify-center mb-4 space-y-2">
+                <span className="text-xl font-bold text-gray-500 line-through">
                   ₹5,500
                 </span>
-                <span className="text-3xl font-bold text-gray-900 ">
+                <span className="text-3xl font-bold text-gray-900">
                   ₹4,499
                 </span>
-                <a
-                  href="https://finlilytechnology.com/stock-calls/"
-                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
-                >
-                  Add to cart
-                </a>
               </div>
             </div>
           </div>
 
-          <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+          {/* Quarterly Plan */}
+          <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition-shadow duration-200">
             <a href="https://finlilytechnology.com/stock-calls/">
               <Image
                 className="p-8 rounded-t-lg"
                 src={Quaterly}
-                alt="product image"
+                alt="Quarterly Plan"
               />
             </a>
-            <div className="px-5 pb-5">
+            <div className="px-5 pb-5 text-center">
               <a href="https://finlilytechnology.com/stock-calls/">
-                <h5 className="text-xl font-semibold tracking-tight text-gray-900 ">
-                  Stock Calls - Quaterly Plan
+                <h5 className="text-xl font-semibold tracking-tight text-gray-900 mb-2">
+                  Stock Calls - Quarterly Plan
                 </h5>
               </a>
-              <div className="flex items-center mt-2.5 mb-5">
-                <div className="flex items-center space-x-1 rtl:space-x-reverse">
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-gray-200 "
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                </div>
-                <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded  ms-3">
-                  5.0
+              <div className="flex flex-col items-center justify-center mb-4 space-y-2">
+                <span className="text-xl font-bold text-gray-500 line-through">
+                  ₹3,000
                 </span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-xl font-bold text-gray-500  line-through">
-                  ₹3,500
-                </span>
-                <span className="text-3xl font-bold text-gray-900 ">
+                <span className="text-3xl font-bold text-gray-900">
                   ₹2,499
                 </span>
-                <a
-                  href="https://finlilytechnology.com/stock-calls/"
-                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-                >
-                  Add to cart
-                </a>
               </div>
             </div>
           </div>
 
-          <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+          {/* Yearly Plan */}
+          <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg transition-shadow duration-200">
             <a href="https://finlilytechnology.com/stock-calls/">
               <Image
                 className="p-8 rounded-t-lg"
                 src={Yearly}
-                alt="product image"
+                alt="Yearly Plan"
               />
             </a>
-            <div className="px-5 pb-5">
+            <div className="px-5 pb-5 text-center">
               <a href="https://finlilytechnology.com/stock-calls/">
-                <h5 className="text-xl font-semibold tracking-tight text-gray-900 ">
+                <h5 className="text-xl font-semibold tracking-tight text-gray-900 mb-2">
                   Stock Calls - Yearly Plan
                 </h5>
               </a>
-              <div className="flex items-center mt-2.5 mb-5">
-                <div className="flex items-center space-x-1 rtl:space-x-reverse">
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-yellow-300"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                  <svg
-                    className="w-4 h-4 text-gray-200 "
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 22 20"
-                  >
-                    <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-                  </svg>
-                </div>
-                <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded  ms-3">
-                  5.0
-                </span>
-              </div>
-              <div className="flex items-center justify-evenly">
-                <span className="text-xl font-bold text-gray-500  line-through">
+              <div className="flex flex-col items-center justify-center mb-4 space-y-2">
+                <span className="text-xl font-bold text-gray-500 line-through">
                   ₹10,000
                 </span>
-                <span className="text-3xl font-bold text-gray-900 ">₹7499</span>
-                <a
-                  href="https://finlilytechnology.com/stock-calls/"
-                  className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
-                >
-                  Add to cart
-                </a>
+                <span className="text-3xl font-bold text-gray-900">
+                  ₹8,499
+                </span>
               </div>
             </div>
           </div>
