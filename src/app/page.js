@@ -8,6 +8,7 @@ import AboutUs from "./components/AboutUs";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
 import Pricing from "./components/Pricing";
+import StockPerformance from "./components/StockPerformance";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       {/* <Hero/> */}
       {/* <AboutUs/> */}
       <Fact />
+      <StockPerformance/>
       <Features />
       <Pricing/>
       <Download />

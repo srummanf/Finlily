@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../public/images/logo2.png";
+import apple from "../public/images/hi-portrait.png";
 
 const Fact = () => {
   const [showMore1, setShowMore1] = useState(false);
@@ -223,7 +224,9 @@ const Fact = () => {
           </svg>
           <div className="text-left rtl:text-right">
             <div className="mb-1 text-xs">Get in on</div>
-            <div className="-mt-1 font-sans text-sm font-semibold">Google Play</div>
+            <div className="-mt-1 font-sans text-sm font-semibold">
+              Google Play
+            </div>
           </div>
         </a>
       </div>
@@ -238,6 +241,9 @@ const Fact = () => {
         <span className="text-green-500">*</span>Cumulative returns from August
         2023
       </p>
+      <div className="flex justify-center mt-2">
+        <Image src={apple} width="300" height="300" />
+      </div>
     </div>
   );
 };
