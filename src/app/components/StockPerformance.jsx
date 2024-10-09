@@ -54,15 +54,15 @@ export default function StockPerformance() {
             <p className="text-gray-400 mb-4">{stock.symbol}</p>
             <div className="flex justify-between mb-2">
               <span className="text-gray-400">Duration</span>
-              <span className="font-semibold">{stock.duration}</span>
+              <span className="font-semibold text-end">{stock.duration}</span>
             </div>
             <div className="flex justify-between mb-2">
               <span className="text-gray-400">Date of Recommendation</span>
-              <span className="font-semibold">{stock.recommendationDate}</span>
+              <span className="font-semibold text-end">{stock.recommendationDate}</span>
             </div>
             <div className="flex justify-between mb-4">
               <span className="text-gray-400">Date of Exit</span>
-              <span className="font-semibold">{stock.exitDate}</span>
+              <span className="font-semibold text-end">{stock.exitDate}</span>
             </div>
             <div className="flex bg-gray-700 rounded-md overflow-hidden">
               <div className="flex-1 p-4 text-center">
